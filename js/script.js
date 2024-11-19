@@ -1,3 +1,6 @@
+//On lie un événement click au bouton avec l'ID submitQuiz, et que lorsque l'utilisateur clique sur ce bouton, la fonction validateQuiz est appelée.
+document.getElementById("submitQuiz").addEventListener("click", validateQuiz);
+
 function validateQuiz() {
   const correctAnswers = {
     quiz1: "Napoleon Bonaparte",
