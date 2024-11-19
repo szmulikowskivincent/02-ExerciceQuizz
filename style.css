@@ -7,8 +7,112 @@
 }
 
 body {
-  min-height: 100vh;
+  min-block-size: 100vh;
   font-family: Open sans, sans-serif;
   background: linear-gradient(to right, #e0eafc, #cfdef3);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+.quiz-title {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #eaf1fc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.quiz-title strong {
+  font-weight: bold;
+}
+
+.quiz-title input[type="checkbox"] {
+  inline-size: 30px;
+  block-size: 30px;
+}
+
+.content {
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz-container {
+  background: #fff;
+  inline-size: 33%;
+  padding: 20px;
+  margin-block-end: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: start;
+}
+
+.question {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-block-end: 10px;
+}
+
+.validate-btn {
+  background-color: #fff;
+  color: #0a750e;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  inline-size: 10%;
+}
+
+.validate-btn .checkmark {
+  margin-inline-start: 5px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.validate-btn:hover {
+  background-color: #f3f3f3;
+  transform: translateY(-2px);
+}
+
+.info {
+  margin-block-start: 15px;
+  font-size: 1rem;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  inline-size: 33%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-inline-end: 10px;
+}
+
+label {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Ajustement responsive */
+@media (max-width: 768px) {
+
+  .quiz-container,
+  .validate-btn,
+  .info {
+    inline-size: 90%;
+  }
 }

@@ -5,13 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quizz JS</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <div align="center">
+        <strong>Quizz</strong> Culture générale.
+        <input type="checkbox" checked />
+    </div>
 
-    <script src="app.js"></script>
+    <br />
+
+    <div class="content">
+      <div class="quiz-container">
+        <p class="question">
+          Qui est sacré empereur de France le 2 décembre 1804 ?
+        </p>
+        <form>
+          <label>
+            <input type="radio" name="quiz" value="Clovis" />
+            Clovis </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="Abraham Lincoln" />
+            Abraham Lincoln </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="Napoleon Bonaparte" />
+            Napoléon Bonaparte
+          </label>
+        </form>
+      </div>
+
+      <br />
+
+      <div class="quiz-container">
+        <p class="question">
+          Quand la déclaration d'indépendance des États-Unis a-t-elle été votée
+          ?
+        </p>
+        <form>
+          <label>
+            <input type="radio" name="quiz" value="4 juillet 1776" />
+            4 juillet 1776 </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="18 avril 1856" />
+            18 avril 1856 </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="30 juin 1925" />
+            30 juin 1925
+          </label>
+        </form>
+      </div>
+
+      <br />
+
+      <div class="quiz-container">
+        <p class="question">
+          Quand la déclaration d'indépendance des États-Unis a-t-elle été votée
+          ?
+        </p>
+        <form>
+          <label>
+            <input type="radio" name="quiz" value="4 juillet 1776" />
+            4 juillet 1776 </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="18 avril 1856" />
+            18 avril 1856 </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="30 juin 1925" />
+            30 juin 1925
+          </label>
+        </form>
+      </div>
+
+      <br />
+
+      <div class="quiz-container">
+        <p class="question">Quelle est la capitale de la Slovénie ?</p>
+        <form>
+          <label>
+            <input type="radio" name="quiz" value="Ljubljana" />Ljubljana</label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="Belgrade" />
+            Belgrade </label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="Bratislava" />
+            Bratislava
+          </label>
+        </form>
+      </div>
+
+      <br />
+
+      <div class="quiz-container">
+        <p class="question">Combien d'habitant compte l'Irlande en 2020 ?</p>
+        <form>
+          <label>
+            <input
+              type="radio"
+              name="quiz"
+              value="1.365
+          Million"
+            />1.365 Million</label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="21 Million" />
+            21 Million</label
+          ><br />
+          <label>
+            <input type="radio" name="quiz" value="4.9 Million" />
+            4.9 Million
+          </label>
+        </form>
+      </div>
+
+      <br />
+
+      <div class="content">
+        <button class="validate-btn">
+          VALIDER <span class="checkmark">✔</span>
+        </button>
+
+        <br />
+
+        <div class="info">
+          Cliquez sur <strong>valider</strong> pour voir les
+          <strong>résultats</strong>.
+        </div>
+      </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
