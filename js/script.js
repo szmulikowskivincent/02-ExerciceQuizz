@@ -1,10 +1,10 @@
 function validateQuiz() {
   const correctAnswers = {
-    quiz1: "Napoleon Bonaparte", // Bonne réponse pour la première question
-    quiz2: "4 juillet 1776", // Bonne réponse pour la deuxième question
-    quiz3: "476 av. JC", // Bonne réponse pour la troisième question
-    quiz4: "Ljubljana", // Bonne réponse pour la quatrième question
-    quiz5: "4.9 Million", // Bonne réponse pour la cinquième question
+    quiz1: "Napoleon Bonaparte",
+    quiz2: "4 juillet 1776",
+    quiz3: "476 av. JC",
+    quiz4: "Ljubljana",
+    quiz5: "4.9 Million",
   };
 
   let score = 0;
