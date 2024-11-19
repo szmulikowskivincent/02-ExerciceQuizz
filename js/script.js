@@ -10,8 +10,11 @@ function validateQuiz() {
   let score = 0;
   let allAnswered = true;
 
-  // Vérifier chaque question
-  for (let i = 1; i <= 5; i++) {
+  // Tableau des questions
+  const questions = [1, 2, 3, 4, 5];
+
+  // Vérifier chaque question avec forEach
+  questions.forEach((i) => {
     const selectedAnswer = document.querySelector(
       `input[name="quiz${i}"]:checked`
     );
@@ -19,20 +22,15 @@ function validateQuiz() {
       `.quiz-container:nth-of-type(${i})`
     );
 
-    // Vérifier si une réponse a été sélectionnée
     if (!selectedAnswer) {
       allAnswered = false;
       questionContainer.classList.add("missing-answer");
     } else {
-      // Ajouter la classe 'correct' ou 'incorrect' en fonction de la réponse
-      if (selectedAnswer.value === correctAnswers[`quiz${i}`]) {
-        score++;
-        questionContainer.classList.add("correct");
-      } else {
-        questionContainer.classList.add("incorrect");
-      }
+      const isCorrect = selectedAnswer.value === correctAnswers[`quiz${i}`];
+      score += isCorrect ? 1 : 0;
+      questionContainer.classList.add(isCorrect ? "correct" : "incorrect");
     }
-  }
+  });
 
   // Vérifier si toutes les questions ont été répondues
   if (!allAnswered) {
