@@ -1,0 +1,17 @@
+.correct {
+    background: linear-gradient(to right, #4CAF50, #9fca6e);
+    /* Dégradé vert */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.incorrect {
+    background: linear-gradient(to right, #F44336, #d37254);
+    /* Dégradé rouge */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}

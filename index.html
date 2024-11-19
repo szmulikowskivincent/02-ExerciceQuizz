@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quizz JS</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/validateur.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,9 +14,9 @@
     />
   </head>
   <body>
-    <div align="center">
-        <strong>Quizz</strong> Culture générale.
-        <input type="checkbox" checked />
+    <div class="center-content">
+      <strong>Quizz</strong> Culture générale.
+      <input type="checkbox" checked />
     </div>
 
     <br />
@@ -27,15 +28,15 @@
         </p>
         <form>
           <label>
-            <input type="radio" name="quiz" value="Clovis" />
+            <input type="radio" name="quiz1" value="Clovis" />
             Clovis </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="Abraham Lincoln" />
+            <input type="radio" name="quiz1" value="Abraham Lincoln" />
             Abraham Lincoln </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="Napoleon Bonaparte" />
+            <input type="radio" name="quiz1" value="Napoleon Bonaparte" />
             Napoléon Bonaparte
           </label>
         </form>
@@ -50,15 +51,15 @@
         </p>
         <form>
           <label>
-            <input type="radio" name="quiz" value="4 juillet 1776" />
+            <input type="radio" name="quiz2" value="4 juillet 1776" />
             4 juillet 1776 </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="18 avril 1856" />
+            <input type="radio" name="quiz2" value="18 avril 1856" />
             18 avril 1856 </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="30 juin 1925" />
+            <input type="radio" name="quiz2" value="30 juin 1925" />
             30 juin 1925
           </label>
         </form>
@@ -68,21 +69,20 @@
 
       <div class="quiz-container">
         <p class="question">
-          Quand la déclaration d'indépendance des États-Unis a-t-elle été votée
-          ?
+          Quand a eu lieu la chute de l'empire romain d'occident ?
         </p>
         <form>
           <label>
-            <input type="radio" name="quiz" value="4 juillet 1776" />
-            4 juillet 1776 </label
+            <input type="radio" name="quiz3" value="15 av. J.-C." />
+            15 av. J.-C. </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="18 avril 1856" />
-            18 avril 1856 </label
+            <input type="radio" name="quiz3" value="476 av. JC" />
+            476 av. JC </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="30 juin 1925" />
-            30 juin 1925
+            <input type="radio" name="quiz3" value="740 av. JC" />
+            740 av. JC
           </label>
         </form>
       </div>
@@ -93,14 +93,15 @@
         <p class="question">Quelle est la capitale de la Slovénie ?</p>
         <form>
           <label>
-            <input type="radio" name="quiz" value="Ljubljana" />Ljubljana</label
+            <input type="radio" name="quiz4" value="Ljubljana" />
+            Ljubljana </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="Belgrade" />
+            <input type="radio" name="quiz4" value="Belgrade" />
             Belgrade </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="Bratislava" />
+            <input type="radio" name="quiz4" value="Bratislava" />
             Bratislava
           </label>
         </form>
@@ -109,22 +110,18 @@
       <br />
 
       <div class="quiz-container">
-        <p class="question">Combien d'habitant compte l'Irlande en 2020 ?</p>
+        <p class="question">Combien d'habitants compte l'Irlande en 2020 ?</p>
         <form>
           <label>
-            <input
-              type="radio"
-              name="quiz"
-              value="1.365
-          Million"
-            />1.365 Million</label
+            <input type="radio" name="quiz5" value="1.365 Million" />
+            1.365 Million </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="21 Million" />
-            21 Million</label
+            <input type="radio" name="quiz5" value="21 Million" />
+            21 Million </label
           ><br />
           <label>
-            <input type="radio" name="quiz" value="4.9 Million" />
+            <input type="radio" name="quiz5" value="4.9 Million" />
             4.9 Million
           </label>
         </form>
@@ -132,19 +129,20 @@
 
       <br />
 
-      <div class="content">
-        <button class="validate-btn">
-          VALIDER <span class="checkmark">✔</span>
-        </button>
+      <button class="validate-btn" onclick="validateQuiz()">
+        VALIDER <span class="checkmark">✔</span>
+      </button>
 
-        <br />
+      <br />
 
-        <div class="info">
-          Cliquez sur <strong>valider</strong> pour voir les
-          <strong>résultats</strong>.
-        </div>
+      <div class="result-message"></div>
+
+      <div class="info">
+        Cliquez sur <strong>valider</strong> pour voir les
+        <strong>résultats</strong>.
       </div>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

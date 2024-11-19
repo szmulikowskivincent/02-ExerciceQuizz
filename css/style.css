@@ -8,31 +8,24 @@
 
 body {
   min-block-size: 100vh;
-  font-family: Open sans, sans-serif;
+  font-family: 'Open sans', sans-serif;
   background: linear-gradient(to right, #e0eafc, #cfdef3);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
 }
 
-.quiz-title {
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  font-weight: normal;
+.center-content {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background-color: #eaf1fc;
-  padding: 10px;
-  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
 }
 
-.quiz-title strong {
-  font-weight: bold;
+.center-content input {
+  margin-inline-start: 10px;
+  transform: scale(1.5);
 }
 
-.quiz-title input[type="checkbox"] {
-  inline-size: 30px;
-  block-size: 30px;
-}
 
 .content {
   inline-size: 100%;
@@ -56,8 +49,36 @@ body {
   font-size: 1rem;
   font-weight: bold;
   margin-block-end: 10px;
+  color: black;
 }
 
+/* Classes ajoutées pour colorier les réponses */
+.quiz-container .question.correct {
+  color: green;
+}
+
+.quiz-container .question.incorrect {
+  color: red;
+}
+
+.quiz-container .question.no-answer {
+  color: orange;
+}
+
+/* Styles pour les réponses */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-inline-end: 10px;
+}
+
+label {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Style du bouton de validation */
 .validate-btn {
   background-color: #fff;
   color: #0a750e;
@@ -84,6 +105,7 @@ body {
   transform: translateY(-2px);
 }
 
+/* Styles du message d'information */
 .info {
   margin-block-start: 15px;
   font-size: 1rem;
@@ -95,16 +117,16 @@ body {
   inline-size: 33%;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  margin-inline-end: 10px;
+.info.green {
+  color: green;
 }
 
-label {
-  font-size: 0.95rem;
-  line-height: 1.5rem;
-  display: flex;
-  align-items: center;
+.info.orange {
+  color: orange;
+}
+
+.info.red {
+  color: red;
 }
 
 /* Ajustement responsive */
